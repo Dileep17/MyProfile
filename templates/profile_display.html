@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body class="body">
+    {% if data: %}
+       <h3> Name : {{data.firstname}} {{data.lastname}}</h3>
+       <h3> company : {{data.company}}</h3>
+       <h3> role : {{data.role}}</h3>
+       <h3> previousprojects : {{data.previousprojects}}</h3>
+       <h3> Current location, {{ data.location }}</h3>
+    {% else %}
+       <h3> sorry no profile found!! </h3>
+    {% endif %}
+</body>
+</html>
